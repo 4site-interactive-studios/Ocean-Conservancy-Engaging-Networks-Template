@@ -1,0 +1,131 @@
+/************************************
+ * Template: 4Site Template - Child Theme Base
+ * Project: Ocean Conservancy
+ ***********************************/
+
+/************************************
+ * Color Index
+ ************************************
+
+    Primary: Action Buttons
+        Background: #32cc33 (Lime Green)
+        Background on Hover: #228e23 (Darker Lime Green)
+        Text: #ffffff (White)
+
+    Secondary: Continue Buttons
+        Background: #009bc4 (Dark Blue)
+        Background on Hover: #e74b3c (Darker Blue);       
+        Text: #ffffff (White)
+
+    Reduced Focus: Edit / Modification Buttons or Links
+        Background: transpare
+        Text: #999999 (Light Grey)
+
+    Other
+        Background: #d65b55 (Red)
+        Text: #ffffff (White)
+
+ ***********************************/
+
+/* Font Overrides */
+body{
+    font-family: "Open Sans",sans-serif;
+}    
+
+/* Color Overrides */
+body{
+    color: #5e5e5f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #e74b3c;
+}
+
+a{
+    color: #1294bf;
+}
+
+a:hover,
+a:focus {
+    color: #d65c56;
+}
+
+#main-content:not(embedded){
+    background: #ffffff;
+}
+
+#main-content .en__field__input--radio:checked+.en__field__label:before,
+#main-content .en__field__input--checkbox:checked+.en__field__label:before {
+    border-color: #009bc4;
+    background-color: #009bc4;
+}
+
+#main-content .en__field__input--checkbox:checked+.en__field__label:before {
+    border-color: #009bc4;
+    background-color: #009bc4;
+}
+
+#main-content button {
+    background-color: #009bc4;
+    color: #ffffff;
+}
+
+#main-content button:hover,
+#main-content button:focus{
+    background-color: #e74b3c;
+}
+
+#main-content .en__tweetButton__send a,
+#main-content .en__tweetButton__sent a{
+    font: 400 13.3333px Arial;
+    padding: 0.85rem 1rem;
+    -webkit-appearance: none;
+    -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+#main-content .en__tweetButton__send{
+    background-color: #009bc4;  
+}
+
+#main-content .en__tweetButton__send:focus,
+#main-content .en__tweetButton__send:hover{
+    cursor: pointer;
+    background-color: #e74b3c
+}
+
+#main-content .en__tweetButton__sent,
+#main-content .en__tweetButton__sent:hover,
+#main-content .en__tweetButton__sent:focus{
+    background-color: #999999;
+
+}
+
+/* Action Submit Buttons */
+#main-content .msgDetails .en__submit button {
+    background-color: #009bc4;
+}
+
+/* Action Submit Buttons Active and Hover */
+#main-content .msgDetails .en__submit button:hover,
+#main-content .msgDetails .en__submit button:focus {
+    background-color: #e74b3c;
+}
+
+/* Next Step Button */
+#main-content .next-step .en__submit button{
+    background-color: #009bc4;
+}
+
+/* Next Step Button */
+#main-content .next-step .en__submit button:hover,
+#main-content .next-step .en__submit button:focus{
+    background-color: #e74b3c;
+}
