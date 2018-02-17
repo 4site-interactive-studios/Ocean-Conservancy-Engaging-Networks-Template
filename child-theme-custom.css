@@ -5,8 +5,7 @@
 
 /* Add a background image when the page is not embedded or in the page builder */
 body:not(.embedded):not(#en__pagebuilder) {
-	background: #033678 url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1874/collage-b-compressor.jpg?v=1517524840000") no-repeat center top local;
-	background-position: center top;
-	background-size: 100% auto;
+	background: #fbfbfb url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1991/light_pattern.gif") repeat;
+	background-position: left top;
 }
 
