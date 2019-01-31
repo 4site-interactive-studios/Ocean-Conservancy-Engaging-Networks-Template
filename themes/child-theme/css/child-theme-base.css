@@ -34,7 +34,20 @@ body{
 
 /* Color Overrides */
 body{
-    color: #5e5e5f;
+    color: #323232;
+}
+
+/* Style Overrides */
+body{
+ /*font-size: 14px;
+ line-height: 1.86;*/
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #323232;
 }
 
 h1,
@@ -44,6 +57,17 @@ h4,
 h5,
 h6 {
     color: #323232;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #323232;
+}
+
+h2{
+    font-size: 18px;
+    margin: 1.5rem 0 1rem 0;
 }
 
 a{
@@ -55,22 +79,35 @@ a:focus {
     color: #d65c56;
 }
 
+/* Focus state */
+#main-content input[type="date"]:focus,
+#main-content input[type="datetime"]:focus,
+#main-content input[type="datetime-local"]:focus,
+#main-content input[type="email"]:focus,
+#main-content input[type="month"]:focus,
+#main-content input[type="number"]:focus,
+#main-content input[type="password"]:focus,
+#main-content input[type="range"]:focus,
+#main-content input[type="search"]:focus,
+#main-content input[type="tel"]:focus,
+#main-content input[type="text"]:focus,
+#main-content input[type="time"]:focus,
+#main-content input[type="url"]:focus,
+#main-content input[type="week"]:focus,
+#main-content select:focus,
+#main-content textarea:focus {
+  border: 1px solid #2ba8dd;
+  -webkit-box-shadow: 0 0 0.3125rem #2ba8dd;
+  box-shadow: 0 0 0.3125rem #2ba8dd;
+}
+
 #main-content:not(embedded){
     background: #ffffff;
 }
 
-#main-content .en__field__input--radio:checked+.en__field__label:before,
-#main-content .en__field__input--checkbox:checked+.en__field__label:before {
-    border-color: #009bc4;
-    background-color: #009bc4;
-}
-
-#main-content .en__field__input--checkbox:checked+.en__field__label:before {
-    border-color: #009bc4;
-    background-color: #009bc4;
-}
-
-#main-content button {
+#main-content button,
+#main-content .radio-to-buttons label.en__field__label.en__field__label--item:hover,
+#main-content .radio-to-buttons input[type='radio']:checked + label {
     background-color: #009bc4;
     color: #ffffff;
 }
@@ -79,6 +116,32 @@ a:focus {
 #main-content button:focus{
     background-color: #e74b3c;
 }
+
+#main-content .en__field__input--radio:checked+.en__field__label:before,
+#main-content .en__field__input--checkbox:checked+.en__field__label:before {
+    border-color: #323232;
+    background-color: #323232;
+}
+
+#main-content .en__field__input--checkbox+.en__field__label:before,
+#main-content .en__field__input--checkbox:checked+.en__field__label:before{
+    border-radius: 50%;
+}
+
+
+/*
+#main-content .en__field__input--radio:checked+.en__field__label:before,
+#main-content .en__field__input--checkbox:checked+.en__field__label:before {
+  border-color: #2ba6cb;
+  background-color: #2ba6cb;
+}
+
+#main-content .en__field__input--checkbox:checked+.en__field__label:before {
+  border-color: #2ba6cb;
+  background-color: #2ba6cb;
+  color: #ffffff;
+}
+*/
 
 #main-content .en__tweetButton__send a,
 #main-content .en__tweetButton__sent a{
