@@ -4,9 +4,19 @@
  ***********************************/
 
 /* Add a background image when the page is not embedded or in the page builder */
-body:not(.embedded):not(#en__pagebuilder) {
+html:not(.embedded) body:not(#en__pagebuilder) {
 	background: #f3f3f3 url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1991/gray_pattern-optimized.jpg?v=1527883852000") repeat;
 	background-position: left top;
+}
+
+body.embedded{
+	background: transparent !important;
+}
+
+@media (min-width: 40em){
+	html.embedded body {
+		background-color: transparent;
+	}
 }
 
 html.has-image body:not(.embedded):not(#en__pagebuilder) {
@@ -477,6 +487,12 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 	opacity: .5;
 	display: inline-block;
 }
+#main-content img.oc-gs-logo{
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	opacity: 1;
+	display: inline-block;
+}
 
 #main-content .social-share p{
 	text-align: right;
@@ -685,4 +701,38 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 		min-height: 500px;
 	}
 
+}
+
+
+/*****************************************
+ * Progress Bar Styling - Iframe + Widget
+ ****************************************/
+ div.enWidget--progressBar div.enWidget__display,
+ div.enWidget--progressBar div.enWidget__bar,
+ div.enWidget--progressBar div.enWidget__progress,
+ body.progress-bar div.enWidget__display,
+ body.progress-bar div.enWidget__bar,
+ body.progress-bar div.enWidget__progress{
+ 	min-height: 18px;
+ 	border-radius: 18px;
+ }
+ div.enWidget--progressBar div.enWidget__fill,
+ body.progress-bar div.enWidget__fill{
+ 	border: 0;
+	border-radius: 18px;
+ }
+ div.enWidget--progressBar div.enWidget__copy,
+ body.progress-bar div.enWidget__copy{
+ 	font-size: 18px;
+ 	font-family: 'Roboto', sans-serif;
+ }
+
+ /* Misc */
+ #main-content .en__submit{
+	max-width: 370px !important;
+	width: 100% !important;
+}
+
+html.embedded body #main-content{
+	margin: 0 !important;
 }
