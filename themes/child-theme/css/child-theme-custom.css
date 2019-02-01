@@ -128,7 +128,7 @@ body:not(#en__pagebuilder) .banner-image{
 }
 
 #main-content .donation-amount.radio-to-buttons.round-buttons .en__field__item--other{
-    background-image: url(https://apps.4sitestudios.com/temp/custom-template/images/other-formated.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/child-theme/images/other-formated.png);
 	background-size: 74px 36px;
     background-position: 13px 18px;
     background-repeat: no-repeat;
@@ -146,7 +146,7 @@ body:not(#en__pagebuilder) .banner-image{
 	box-shadow: none;
 	border: 0;
 	/*
-    background-image: url("https://apps.4sitestudios.com/temp/custom-template/images/giving-other-placeholder-value.png");
+    background-image: url("https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/child-theme/images/giving-other-placeholder-value.png");
 	background-repeat: no-repeat;
     background-size: 32px 23px;
     background-position: 27px 39px;
@@ -158,7 +158,7 @@ body:not(#en__pagebuilder) .banner-image{
 }
 
 #main-content .donation-amount.radio-to-buttons.round-buttons .has-value.en__field__item--other{
-	background-image: url("https://apps.4sitestudios.com/temp/custom-template/images/surprise-formated.png");
+	background-image: url("https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/child-theme/images/surprise-formated.png");
     background-color: #009bc4;
     border-radius: 50%;
     height: 100px;
@@ -350,11 +350,11 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 #main-content .recurring-payment.pill-buttons.radio-to-buttons .en__field__item{
 	width: 170px;
 }
-
+/*
 #main-content .recurring-payment.pill-buttons.radio-to-buttons label,
 #main-content .recurring-payment.pill-buttons.radio-to-buttons input[type='radio'] + label{
-	/*min-width: 170px;*/
-}
+	min-width: 170px;
+}*/
 
 #main-content .pre-footer{
 	display: flex;
@@ -367,19 +367,22 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 }
 
 /* Give by card */
+/*
 #main-content #en__field_supporter_questions_1801650 label{
 
-}
+}*/
 
 /* Give by PayPal */
+/*
 #main-content #en__field_supporter_questions_1801651 label{
 	
-}
+}*/
 
 /* Give by Check */
+/*
 #main-content #en__field_supporter_questions_1801652 label{
 	
-}
+}*/
 
 
 #main-content .have-questions-call-line p{
@@ -536,11 +539,11 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 }
 
 #main-content .en__share__button--facebook {
-    background-image: url(https://apps.4sitestudios.com/temp/custom-template/images/facebook.svg) !important;
+    background-image: url(https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/parent-theme/images/facebook.svg) !important;
 }
 
 #main-content .en__share__button--twitter {
-    background-image: url(https://apps.4sitestudios.com/temp/custom-template/images/twitter.svg) !important;
+    background-image: url(https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/parent-theme/images/twitter.svg) !important;
 }
 
 #main-content .en__share__button--gplus {
