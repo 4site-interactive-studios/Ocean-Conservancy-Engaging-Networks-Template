@@ -15,7 +15,9 @@ window.addEventListener('load', function() {
       if(getPaymentType() == 'check') {
         document.getElementById(payment_by_card_input_id).click();      
       }
-      check_payment_method.parentElement.style.display = 'none';
+      if(check_payment_method){
+        check_payment_method.parentElement.style.display = 'none';
+      }
     }
   }
 
