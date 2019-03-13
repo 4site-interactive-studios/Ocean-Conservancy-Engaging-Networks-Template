@@ -3,7 +3,8 @@ window.addEventListener('load', function() {
   // fields to hide
   var honey_pot_fields = [
     '.en__field--NOT_TAGGED_80',
-    '.en__field--NOT_TAGGED_81'
+    '.en__field--NOT_TAGGED_81',
+    '.en__field--NOT_TAGGED_82'
   ];
 
   // hide the fields, make them un-tabbable, turn off autocomplete
