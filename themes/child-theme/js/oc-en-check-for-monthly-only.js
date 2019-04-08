@@ -29,6 +29,9 @@ window.addEventListener('load', function() {
     });
   }
 
-  updateCheckPaymentDisplay();
+  if(null !== document.getElementById(payment_by_check_input_id)){
+    updateCheckPaymentDisplay();
+  }
+  
 });
 })();

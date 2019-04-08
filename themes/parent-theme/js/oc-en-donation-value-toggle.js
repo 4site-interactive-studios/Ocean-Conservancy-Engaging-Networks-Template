@@ -18,6 +18,12 @@ window.addEventListener('oc_en_helpers_loaded', function() {
 
   function selectDonationValue(index) {    
     var donate_inputs = document.querySelectorAll('input[name="' + donate_amount_name + '"]');
+    var donate_other_input = document.querySelector('input[name="' + donate_amount_other_name + '"]');
+
+    // Exit if we cant find any donation fields
+    if(null == donate_other_input || !donate_inputs.length){
+      return false;
+    }
     for(var i = 0; i < donate_inputs.length; i++) {
       if(i == index) {
         donate_inputs[i].checked = true;
@@ -26,7 +32,6 @@ window.addEventListener('oc_en_helpers_loaded', function() {
       }      
     }
 
-    var donate_other_input = document.querySelector('input[name="' + donate_amount_other_name + '"]');
     if(index == -1 && select_other_if_amount_not_found && current_donation_amount) {
       donate_other_input.checked = true;
       donate_other_input.value = parseInt(current_donation_amount);
