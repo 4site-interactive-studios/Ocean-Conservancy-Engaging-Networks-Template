@@ -31,6 +31,11 @@ window.addEventListener('load', function() {
   */
 
 
+  // Avoid this if we're not in a Donation Form Page
+  if(!document.querySelectorAll('input[name="' + donation_amount_name + '"]').length){
+    return false;
+  }
+
 
   // Update the payment type select depending on the payment method
   function setPaymentTypeSelect(payment_method) {
