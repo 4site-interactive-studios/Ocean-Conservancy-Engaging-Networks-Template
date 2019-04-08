@@ -31,12 +31,6 @@ window.addEventListener('load', function() {
   */
 
 
-  // Avoid this if we're not in a Donation Form Page
-  if(!document.querySelectorAll('input[name="' + donation_amount_name + '"]').length){
-    return false;
-  }
-
-
   // Update the payment type select depending on the payment method
   function setPaymentTypeSelect(payment_method) {
     
@@ -176,6 +170,11 @@ window.addEventListener('load', function() {
   // Add our form submit handler
   var form = document.querySelector('form.en__component');
   form.addEventListener('submit', function(e) {
+    // Avoid this if we're not in a Donation Form Page
+    if(!document.querySelectorAll('input[name="' + donation_amount_name + '"]').length){
+      return true;
+    }
+
     // add a class to the body to assist with EN's automatic scroll-to-first-error functionality
     // when we have moved the error display to below the field instead of the default top location
     document.querySelector('body').classList.add('error-jump-assist');
