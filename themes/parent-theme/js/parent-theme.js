@@ -254,6 +254,10 @@ if (!Element.prototype.matches) {
     // if there are no error messages
     if (submitBtnEl) {
         submitBtnEl.addEventListener('click', function(e) {
+            // Exit if we are on ECard Form Page
+            if(document.querySelectorAll('div.en__ecardrecipients__list').length){
+                return true;
+            }
             // setTimeout to place in queue instead
             // of in call stack immediately.
             // Allows time for validation to occur first.
