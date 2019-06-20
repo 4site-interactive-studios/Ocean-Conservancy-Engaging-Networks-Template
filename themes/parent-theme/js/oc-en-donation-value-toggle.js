@@ -122,7 +122,10 @@
     );
     for (i = 0; i < donation_frequency_buttons.length; i++) {
       donation_frequency_buttons[i].addEventListener("change", function(e) {
-        processDonationValues();
+        processDonationValues(
+          pre_selected_value_single,
+          pre_selected_value_monthly
+        );
       });
     }
 
