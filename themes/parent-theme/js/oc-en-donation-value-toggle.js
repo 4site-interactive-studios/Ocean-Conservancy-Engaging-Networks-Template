@@ -72,10 +72,17 @@
         'input[name="' + donate_amount_name + '"]'
       );
       for (var i = 0; i < donate_inputs.length; i++) {
-        donate_inputs[i].value = update_prefills[i];
-        donate_inputs[i].parentNode.querySelector("label").textContent =
-          "$" + donate_inputs[i].value;
-        donate_inputs[i].setAttribute("data-original", update_prefills[i]);
+        // If there's no value for this field, hide it
+        if (update_prefills[i] === undefined) {
+          donate_inputs[i].parentNode.classList.add("en__hidden");
+        } else {
+          // Do everything else
+          donate_inputs[i].value = update_prefills[i];
+          donate_inputs[i].parentNode.querySelector("label").textContent =
+            "$" + donate_inputs[i].value;
+          donate_inputs[i].setAttribute("data-original", update_prefills[i]);
+          donate_inputs[i].parentNode.classList.remove("en__hidden");
+        }
       }
 
       if (prefill_value && update_prefills.indexOf(prefill_value) > -1)
