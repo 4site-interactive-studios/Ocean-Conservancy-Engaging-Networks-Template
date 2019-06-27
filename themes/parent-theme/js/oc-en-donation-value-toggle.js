@@ -123,10 +123,11 @@
     for (i = 0; i < donation_frequency_buttons.length; i++) {
       donation_frequency_buttons[i].addEventListener("change", function(e) {
         var current_donation_frequency = window.getDonationFrequency();
+        var current_donation_amount = window.getDonationAmount();
         if (current_donation_frequency == " Monthly") {
-          pre_selected_value_monthly = window.getDonationAmount(); // Store the current monthly value
+          pre_selected_value_single = current_donation_amount; // Store the current single value
         } else {
-          pre_selected_value_single = window.getDonationAmount(); // Store the current single value
+          pre_selected_value_monthly = current_donation_amount; // Store the current monthly value
         }
         processDonationValues(
           pre_selected_value_single,
