@@ -72,10 +72,13 @@
       var donate_inputs = document.querySelectorAll(
         'input[name="' + donate_amount_name + '"]'
       );
-      for (var i = 0; i < donate_inputs.length; i++) {
+      // Loop through all donate_inputs EXCEPT the last one (Other)
+      for (var i = 0; i < donate_inputs.length - 1; i++) {
         // If there's no value for this field, hide it
         if (update_prefills[i] === undefined) {
           donate_inputs[i].parentNode.classList.add("en__hidden");
+          donate_inputs[i].value = 0;
+          donate_inputs[i].setAttribute("data-original", 0);
         } else {
           // Do everything else
           donate_inputs[i].value = update_prefills[i];
