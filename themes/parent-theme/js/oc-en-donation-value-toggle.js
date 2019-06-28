@@ -54,7 +54,7 @@
         select_other_if_amount_not_found &&
         current_donation_amount
       ) {
-        donate_other_input.checked = true;
+        donate_inputs[donate_inputs.length - 1].checked = true;
         donate_other_input.value = parseInt(current_donation_amount);
         donate_other_input.parentNode.classList.add("has-value");
       } else {
@@ -63,11 +63,7 @@
       }
     }
 
-    function replaceDonationValues(
-      source_prefills,
-      update_prefills,
-      prefill_value
-    ) {
+    function replaceDonationValues(update_prefills, prefill_value) {
       prefill_value = prefill_value || 0;
       var donate_inputs = document.querySelectorAll(
         'input[name="' + donate_amount_name + '"]'
@@ -89,8 +85,7 @@
         }
       }
 
-      if (prefill_value && update_prefills.indexOf(prefill_value) > -1)
-        current_donation_amount = prefill_value;
+      if (prefill_value) current_donation_amount = prefill_value;
 
       var select_index = update_prefills.indexOf(
         parseInt(current_donation_amount)
@@ -114,17 +109,9 @@
       prefill_value_single = prefill_value_single || 0;
       prefill_value_monthly = prefill_value_monthly || prefill_value_single;
       if (current_donation_frequency == " Monthly") {
-        replaceDonationValues(
-          single_prefills,
-          monthly_prefills,
-          prefill_value_monthly
-        );
+        replaceDonationValues(monthly_prefills, prefill_value_monthly);
       } else {
-        replaceDonationValues(
-          monthly_prefills,
-          single_prefills,
-          prefill_value_single
-        );
+        replaceDonationValues(single_prefills, prefill_value_single);
       }
     }
 
