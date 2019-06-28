@@ -1887,3 +1887,12 @@ body.form-center #main-content-wrapper {
 .en__component--column.en__component--advcolumn {
   flex: 1 0 0%;
 }
+
+/* If invisible other field is being forced visible, we have JS that auto selects the corresponding radio select so we can hide it */
+#main-content
+  .show-hidden-input
+  .en__field--withOther
+  .en__field__element--radio
+  > div.en__field__item:nth-last-of-type(2) {
+  display: none;
+}
