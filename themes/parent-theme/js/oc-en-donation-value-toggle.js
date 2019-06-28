@@ -66,8 +66,9 @@
     function replaceDonationValues(
       source_prefills,
       update_prefills,
-      prefill_value = 0
+      prefill_value
     ) {
+      prefill_value = prefill_value || 0;
       var donate_inputs = document.querySelectorAll(
         'input[name="' + donate_amount_name + '"]'
       );
