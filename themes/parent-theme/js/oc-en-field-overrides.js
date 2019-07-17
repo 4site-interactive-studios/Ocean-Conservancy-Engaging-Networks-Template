@@ -78,7 +78,10 @@ window.addEventListener('load', function() {
       { value: 'WA', label: 'Washington' },
       { value: 'WV', label: 'West Virginia' },
       { value: 'WI', label: 'Wisconsin' },
-      { value: 'WY', label: 'Wyoming' }
+      { value: 'WY', label: 'Wyoming' },
+      { value: 'AA', label: 'Armed Forces Americas' },
+      { value: 'AE', label: 'Armed Forces Africa, Canada, Europe, Middle East' },
+      { value: 'AP', label: 'Armed Forces Pacific' }
     ] }
   ];
 
