@@ -37,6 +37,10 @@
     <link rel="dns-prefetch" href="//www.googleadservices.com">     
     <link rel="dns-prefetch" href="//www.facebook.com">   
     
+    <!-- Hide page contents while it's still loading and get color on the page ASAP to indicate to the user something has happened.  -->
+    <style>body:not(#en__pagebuilder).loading{visibility:hidden}body{background-color: #f3f3f3;}#en__pagebuilder{background-color: #f3f3f3!important;}</style>
+    <script>document.addEventListener("DOMContentLoaded", function() {const body = document.body; body.classList.remove("loading"); body.classList.add("loaded");});</script>    
+
     <!-- Google Optimize: Page hiding snippet (recommended)  -->
     <!--<style>.async-hide { opacity: 0 !important} </style>-->
     <!--<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;-->
@@ -94,7 +98,7 @@
 
 </head>
 
-<body>
+<body class="loading">
     
     <!-- Google Tag Manager -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P99B2PT"
