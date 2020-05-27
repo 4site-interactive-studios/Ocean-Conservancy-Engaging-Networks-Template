@@ -386,6 +386,12 @@
  * Base Styles
  ***********************************/
 
+ body,
+ body.loading,
+ body.loaded {
+   visibility: visible !important;
+ }
+
  body {
     margin: 0;
     color: #2a2a2a;
