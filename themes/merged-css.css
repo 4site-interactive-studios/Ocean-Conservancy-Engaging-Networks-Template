@@ -397,7 +397,6 @@
     color: #2a2a2a;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
       Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-      font-display: swap;
     font-size: 100%;
     line-height: 1.4;
   }
@@ -438,7 +437,6 @@
   #main-content-wrapper {
     max-width: 53rem;
     font-family: "Roboto", sans-serif !important;
-    font-display: swap;
   }
   
   #main-content {
@@ -2419,7 +2417,6 @@
 /* Font Overrides */
 body{
     font-family: "Roboto", sans-serif;
-    font-display: swap;
 }    
 
 /* Color Overrides */
@@ -2604,7 +2601,6 @@ html body:not(#en__pagebuilder) {
   #main-content-wrapper {
     max-width: calc(840px + 4.375rem);
     font-family: "Roboto", sans-serif !important;
-    font-display: swap;
   }
   
   #main-content .indented-body {
@@ -2722,7 +2718,6 @@ html body:not(#en__pagebuilder) {
     font-size: 34px;
     font-weight: 600;
     font-family: "Work Sans", sans-serif;
-    font-display: swap;
     color: #323232;
     background: none;
     border-radius: 0;
@@ -2770,7 +2765,6 @@ html body:not(#en__pagebuilder) {
     font-size: 34px;
     font-weight: 600;
     font-family: "Work Sans", sans-serif;
-    font-display: swap;
   }
   
   #main-content .donation-amount.round-buttons label:first-letter {
@@ -3325,7 +3319,6 @@ html body:not(#en__pagebuilder) {
   body.progress-bar div.enWidget__copy {
     font-size: 18px;
     font-family: "Roboto", sans-serif;
-    font-display: swap;
   }
   
   /* Misc */
