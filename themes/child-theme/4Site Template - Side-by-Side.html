@@ -1,7 +1,5 @@
 <!DOCTYPE HTML>
-
 <html>
-
 <head>
     
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -29,7 +27,7 @@
 
     <link rel="preconnect" href="//cdn.jsdelivr.net/"> 
     <link rel="preconnect" href="//d2amdniajcqcy4.cloudfront.net"> 
-    <link rel="preconnect" href="//aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com"> 
+    <link rel="prefetch" href="https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1991/logo-black-large.png">
     <link rel="dns-prefetch" href="//www.googletagmanager.com">  
     <link rel="dns-prefetch" href="//www.google.com">      
     <link rel="dns-prefetch" href="//in.hotjar.com">     
@@ -38,42 +36,14 @@
     <link rel="dns-prefetch" href="//connect.facebook.net"> 
     <link rel="dns-prefetch" href="//www.googleadservices.com">     
     <link rel="dns-prefetch" href="//www.facebook.com">   
-    <link rel="prefetch" href="https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1991/logo-black-large.png">
-
-    <!-- 4Site Template CSS -->
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css">-->
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/parent-theme/css/parent-theme.css">-->
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/child-theme/css/child-theme-base.css">-->
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/child-theme/css/child-theme-custom.css">-->
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/child-theme/js/oc-en-never-bounce-integration.css">-->
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900|Work+Sans"> -->
-    <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">-->
-    <style>
-        /* Temp Fix while Recaptcha is in place for Donation forms */
-        /*.temporary-recaptcha{*/
-        /*    flex-direction: column !important;*/
-        /*    align-items: center !important;*/
-        /*    justify-content: center !important;*/
-        /*}*/
-    </style>
-    
-    <!-- 4Site Template JS: Render Critical: Donation Amounts -->
-    <!-- Source: https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/parent-theme/js/oc-en-donation-value-toggle.js -->
-    <script>
-        window.addEventListener("oc_en_helpers_loaded",function(){var e=!0,n="transaction.donationAmt",t="transaction.donationAmt.other",o=window.oc_monthly_prefills?window.oc_monthly_prefills:[22,45,105,175,250,500],a=window.oc_single_prefills?window.oc_single_prefills:[50,75,150,250,500,750],r=window.oc_selected_prefill_single?parseInt(window.oc_selected_prefill_single):0,l=window.oc_selected_prefill_monthly?parseInt(window.oc_selected_prefill_monthly):0,d=window.getUrlParameter("transaction.donationAmt");d&&(r=parseInt(d),l=parseInt(d));var c=window.getDonationAmount();function u(o,i){i=i||0;for(var a=document.querySelectorAll('input[name="'+n+'"]'),r=0;r<a.length-1;r++)void 0===o[r]?(a[r].parentNode.classList.add("en__hidden"),a[r].value=0,a[r].setAttribute("data-original",0)):(a[r].value=o[r],a[r].parentNode.querySelector("label").textContent="$"+a[r].value,a[r].setAttribute("data-original",o[r]),a[r].parentNode.classList.remove("en__hidden"));i&&(c=i),function(o){var i=document.querySelectorAll('input[name="'+n+'"]'),a=document.querySelector('input[name="'+t+'"]');if(null==a||!i.length)return!1;for(var r=0;r<i.length;r++)i[r].checked=r==o;-1==o&&e&&c?(i[i.length-1].checked=!0,a.value=parseInt(c),a.parentNode.classList.add("has-value")):(a.parentNode.classList.remove("has-value"),a.value="")}(o.indexOf(parseInt(c)))}function s(e,n){e=e||0,n=n||e," Monthly"==window.getDonationFrequency()?u(o,n):u(a,e)}var w=document.querySelectorAll('input[name="transaction.recurrpay"]');for(i=0;i<w.length;i++)w[i].addEventListener("change",function(e){var n=window.getDonationFrequency(),t=window.getDonationAmount();" Monthly"==n?r=t:l=t,s(r,l)});var p=document.querySelectorAll('input[name="'+n+'"]');for(i=0;i<p.length;i++)p[i].addEventListener("change",function(e){c=window.getDonationAmount()});var _=document.querySelector('input[name="'+t+'"]');_&&_.addEventListener("change",function(e){c=window.getDonationAmount()}),window.addEventListener("load",function(){s(r,l)})});
-    </script>
-  
-    <!-- 4Site Template JS: Render Critical: Donation Amounts -->
-    <!-- Source: https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/parent-theme/js/oc-en-donation-value-toggle.js -->  
-  
     
     <!-- Google Optimize: Page hiding snippet (recommended)  -->
-    <style>.async-hide { opacity: 0 !important} </style>
-    <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-    })(window,document.documentElement,'async-hide','dataLayer',4000,
-    {'GTM-P99B2PT':true});</script>    
+    <!--<style>.async-hide { opacity: 0 !important} </style>-->
+    <!--<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;-->
+    <!--h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};-->
+    <!--(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;-->
+    <!--})(window,document.documentElement,'async-hide','dataLayer',4000,-->
+    <!--{'GTM-P99B2PT':true});</script>    -->
     
     <!-- Google Tag Manager -->
     <!-- Hard inclusion of JQuery because GTM is loading code expecting it to be there -->
@@ -85,12 +55,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-P99B2PT');</script>
     <!-- End Google Tag Manager -->      
-    
-    <!-- Begin ThreatMetric profiling tags below -->
-    <script async type="text/javascript" src="https://h.online-metrix.net/fp/tags.js?org_id=7nrfulxi&session_id=e1991-${page~sessionId}&page_id=1"></script>
-    <!-- End profiling tags -->   
-    
-    
+
     <!-- GA Conversion Tracking Start -->
     <script>
       window.receipt_amount_data = '{receipt_data~amount}';
@@ -102,12 +67,6 @@
       dataLayer.push({'adRevenue': prettyAmount });
     </script>
     
-    <!-- 4Site Template JS: Render Critical: Tracking JS -->
-    <!--<script src="https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/child-theme/js/oc-en-tracking.js"></script>-->
-    <script>
-        window.addEventListener("load",function(){var e=window.receipt_amount_data,a=pageJson.pageName.toLowerCase();if(a.indexOf("honor")>=0)var n="Honor";else n=a.indexOf("memorial")>=0?"Memorial":a.indexOf("premium")>=0?"Premium":a.indexOf("monthly")>=0?"Monthly":"Standard Donation";var i,o=window.receipt_recurring_frequency;i=o||"OneTime";var r=e.replace(/\$/g,"");parseFloat(r)>0&&"{receipt_data~amount}"!=r&&dataLayer.push({event:"BFREDtransaction",ecommerce:{purchase:{actionField:{id:window.receipt_tx_id,affiliation:"Engaging Networks Donation Form",revenue:r,tax:"0.00",shipping:"0.00"},products:[{name:pageJson.pageName+" - "+pageJson.campaignPageId,brand:n,id:pageJson.campaignPageId+" - "+r+" - "+i,price:r,variant:i,quantity:1}]}}})});
-    </script>
-
     <!-- 4Site Experiment (Feb 7,2020): Testing if "giftProcessTrue" always fires on a succesful donation -->
     <!-- Pass giftProcess value to Data Layer -->
     <script>
@@ -133,7 +92,6 @@
     </script>
     <!-- GA Conversion Tracking End -->
 
-    <script></script><!-- here to ensure a non-blocking load still occurs in IE and Edge, even if scripts follow loadCSS in head -->
 </head>
 
 <body class="form-side-by-side">
@@ -163,22 +121,18 @@
 
 
 
-
     </div>
 </div>
 </div>
 <!-- End 4Site Template Body Wrapper -->
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@1.0.13/themes/merged-css.min.css">
-
-<!-- 4Site Template JS: Render Critical: Page Banner -->
-<!-- <script src="https://d2amdniajcqcy4.cloudfront.net/donation/js/oc-en-page-banner.js"></script> -->
-<script>!function(){"remove"in Element.prototype||(Element.prototype.remove=function(){this.parentNode&&this.parentNode.removeChild(this)});var e=document.querySelector(".banner-image img");if(e){var r=e.src;document.querySelector(".banner-image").remove(),document.querySelector(".banner").style.backgroundImage="url("+r+")"}}();</script>   
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/merged-css.min.css"> 
 
 <!-- 4Site Template JS -->
+<script src="https://d2amdniajcqcy4.cloudfront.net/donation/js/parent-theme.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pym/1.3.2/pym.v1.min.js"></script>
 <script async src="https://d2amdniajcqcy4.cloudfront.net/donation/js/visibility.js"></script>
 <script async src="https://d2amdniajcqcy4.cloudfront.net/donation/js/oc-en-helpers.js"></script>
-<script src="https://d2amdniajcqcy4.cloudfront.net/donation/js/parent-theme.js"></script>
 <script async src="https://d2amdniajcqcy4.cloudfront.net/donation/js/oc-en-background-settings.js"></script>
 <script async src="https://d2amdniajcqcy4.cloudfront.net/donation/js/oc-en-click-to-expand.js"></script>
 <script async src="https://d2amdniajcqcy4.cloudfront.net/donation/js/oc-en-international-country-select.js"></script>
@@ -189,176 +143,26 @@
 <script async src="https://d2amdniajcqcy4.cloudfront.net/donation/js/oc-en-toggle-memory.js"></script>
 <script async src="https://d2amdniajcqcy4.cloudfront.net/donation/js/oc-en-check-for-monthly-only.js"></script>
 <script async src="https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1991/oc-en-upland-sms-signup.js?v=1583861134000"></script>
+<script async src="https://d2amdniajcqcy4.cloudfront.net/donation/js/oc-en-neverbounce.js"></script>
+<script async src="https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/child-theme/js/NeverBounce.js"></script>    
+<script async src="https://h.online-metrix.net/fp/tags.js?org_id=7nrfulxi&session_id=e1991-${page~sessionId}&page_id=1"></script>    
 <!-- End 4Site Template JS -->
 
-<!-- Begin Never Bounce -->
-<script src="https://d2amdniajcqcy4.cloudfront.net/donation/js/oc-en-neverbounce.js"></script>
-<script src="https://cdn.neverbounce.com/widget/dist/NeverBounce.js"></script>
-<!-- End Never Bounce -->
+<!-- 4Site Template JS: Render Critical: Page Banner -->
+<!-- <script src="https://d2amdniajcqcy4.cloudfront.net/donation/js/oc-en-page-banner.js"></script> -->
+<script>!function(){"remove"in Element.prototype||(Element.prototype.remove=function(){this.parentNode&&this.parentNode.removeChild(this)});var e=document.querySelector(".banner-image img");if(e){var r=e.src;document.querySelector(".banner-image").remove(),document.querySelector(".banner").style.backgroundImage="url("+r+")"}}();</script>   
 
-<!-- PYM Responsive iFrame Script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pym/1.3.2/pym.v1.min.js"></script>
-
-<!-- PYM Child Page Scripts -->
+<!-- 4Site Template JS: Render Critical: Donation Amounts -->
+<!-- Source: https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/parent-theme/js/oc-en-donation-value-toggle.js -->
 <script>
+    window.addEventListener("oc_en_helpers_loaded",function(){var e=!0,n="transaction.donationAmt",t="transaction.donationAmt.other",o=window.oc_monthly_prefills?window.oc_monthly_prefills:[22,45,105,175,250,500],a=window.oc_single_prefills?window.oc_single_prefills:[50,75,150,250,500,750],r=window.oc_selected_prefill_single?parseInt(window.oc_selected_prefill_single):0,l=window.oc_selected_prefill_monthly?parseInt(window.oc_selected_prefill_monthly):0,d=window.getUrlParameter("transaction.donationAmt");d&&(r=parseInt(d),l=parseInt(d));var c=window.getDonationAmount();function u(o,i){i=i||0;for(var a=document.querySelectorAll('input[name="'+n+'"]'),r=0;r<a.length-1;r++)void 0===o[r]?(a[r].parentNode.classList.add("en__hidden"),a[r].value=0,a[r].setAttribute("data-original",0)):(a[r].value=o[r],a[r].parentNode.querySelector("label").textContent="$"+a[r].value,a[r].setAttribute("data-original",o[r]),a[r].parentNode.classList.remove("en__hidden"));i&&(c=i),function(o){var i=document.querySelectorAll('input[name="'+n+'"]'),a=document.querySelector('input[name="'+t+'"]');if(null==a||!i.length)return!1;for(var r=0;r<i.length;r++)i[r].checked=r==o;-1==o&&e&&c?(i[i.length-1].checked=!0,a.value=parseInt(c),a.parentNode.classList.add("has-value")):(a.parentNode.classList.remove("has-value"),a.value="")}(o.indexOf(parseInt(c)))}function s(e,n){e=e||0,n=n||e," Monthly"==window.getDonationFrequency()?u(o,n):u(a,e)}var w=document.querySelectorAll('input[name="transaction.recurrpay"]');for(i=0;i<w.length;i++)w[i].addEventListener("change",function(e){var n=window.getDonationFrequency(),t=window.getDonationAmount();" Monthly"==n?r=t:l=t,s(r,l)});var p=document.querySelectorAll('input[name="'+n+'"]');for(i=0;i<p.length;i++)p[i].addEventListener("change",function(e){c=window.getDonationAmount()});var _=document.querySelector('input[name="'+t+'"]');_&&_.addEventListener("change",function(e){c=window.getDonationAmount()}),window.addEventListener("load",function(){s(r,l)})});
+</script>
 
-    var pymChild = new pym.Child();
-
-    document.addEventListener("DOMContentLoaded", function() {
-        pymChild.sendMessage('childLoaded', 'loading');
-        console.log('Child: "DOMContentLoaded" loaded message has been sent to parent');
-    });
-
-    window.addEventListener("load", function() {
-        setTimeout(function() {
-                pymChild.sendHeight();
-        }, 25);
-        console.log('Child: "load" message has been sent to parent');
-    });
-
-    // Utilizing PYM responsive iFrame library, resizes parent iFrame any time a child iframe is clicked. Overkill but a universal fix that solves for most use cases.
-    if (typeof pymChild !== "undefined") {
-        document.onclick = function() {
-    
-            // Send height update immedietely.
-            pymChild.sendHeight();
-    
-            // And then wait a moment before triggering again so any visual page redraws are corrected for.
-            setTimeout(function() {
-                pymChild.sendHeight();
-            }, 25);
-        };
-    };
-</script>    
-
-<!-- eCard Style to be merged into main CSS -->
-<style>
-
-/*    #main-content .en__ecarditems__thumb{*/
-/*        height: auto !important;*/
-/*    }*/
-    
-/*    #main-content .en__ecarditems__showprev{*/
-        /*display: none !important;*/
-/*    }*/
-    
-/*    #main-content button.en__ecarditems__addrecipient{*/
-/*        margin: 4px !important;*/
-/*    }*/
-    
-/*    #main-content .en__ecardrecipients__name,*/
-/*    #main-content .ecardrecipient__name{*/
-/*        width: calc(50% - 1rem) !important;*/
-/*    }*/
-    
-/*    #main-content .en__ecardrecipients__email,*/
-/*    #main-content .ecardrecipient__email{*/
-/*        width: calc(50% - 1rem) !important;*/
-/*    }*/
-    
-/*    #main-content .ecardrecipient__name,*/
-/*    #main-content .ecardrecipient__email{*/
-/*        font-family: inherit;*/
-/*        font-size: 1rem;*/
-/*        font-weight: normal;*/
-/*        line-height: 1.5;*/
-/*        color: #0a0a0a;*/
-/*        opacity: .8;*/
-/*        padding-left: 10px;*/
-/*        padding-right: 10px;*/
-/*    }*/
-    
-/*    #main-content .en__ecardrecipients__list:before{*/
-        /* content: "Recipient List"; */
-/*        color: #323232;*/
-/*        font-weight: bold;*/
-/*        font-style: normal;*/
-/*        font-stretch: normal;*/
-/*        line-height: normal;*/
-/*        letter-spacing: normal;*/
-/*        color: #323232;    */
-/*    }*/
-    
-    
-/*    #main-content .en__ecardrecipients__recipient{*/
-/*        padding: 0;*/
-/*    }*/
-    
-/*    #main-content .en__ecardrecipients__list{*/
-/*        min-height: 50px;*/
-/*        border: 0px;*/
-/*        padding: 0px;*/
-/*    }*/
-    
-/*    #main-content .ecardrecipient__remove button{*/
-/*        width: 30px;*/
-/*        height: 30px;*/
-/*        background-color: #e74b3c !important;*/
-/*        padding: 0 !important;*/
-/*        font-size: 12px !important;*/
-/*        position: relative;*/
-/*        right: 2px;*/
-/*    }*/
-    
-/*    #main-content .en__ecarditems__thumb img{*/
-/*        height: 150px !important;*/
-/*        width: auto;*/
-/*        border: 2px solid #009bc4;*/
-/*        filter: brightness(75%);*/
-/*    }*/
-    
-/*    #main-content .en__ecarditems__thumb:hover img{*/
-/*        filter: brightness(87.5%);*/
-/*        opacity: .75;*/
-/*    }*/
-    
-/*    #main-content .en__ecarditems__thumb.thumb--active img{*/
-/*        filter: brightness(100%);*/
-/*    }*/
-    
-/*    #main-content .en__ecarditems__thumb {*/
-/*        width: auto !important;*/
-/*    }*/
-    
-/*    #main-content .en__ecarditems__thumb:last-child {*/
-/*        margin-right: 0px;*/
-/*    }*/
-    
-/*    #main-content .en__ecardmessage__default{*/
-/*        margin-bottom: 40px;*/
-/*        height: 18rem;*/
-/*    }*/
-    
-/*    #main-content button.en__ecarditems__prevclose{*/
-/*        background-color: transparent;*/
-/*        top: 5px;*/
-/*        right: -29px;*/
-/*        font-size: 2rem;*/
-/*        padding: 0;*/
-/*        margin: 0;*/
-/*        border: none;*/
-/*    }*/
-    
-/*    #main-content .en__ecarditems__showprev{*/
-/*        background-color: #323232;*/
-/*        margin-bottom: 40px;*/
-/*    }*/
-    
-/*    @media screen and (max-width: 700px) {*/
-/*        #main-content button.en__ecarditems__prevclose{*/
-/*            right: 17px;*/
-/*            color: #9e9e9e;*/
-/*        }*/
-/*    }*/
-
-    /* Helper classes to be merged */
-   /* body#en__pagebuilder #main-content .hide-if-chained,*/
-   /* body#en__pagebuilder #main-content .hide-if-direct{*/
-/*        padding: 12px;*/
-/*        background-color: #fffde5;*/
-   /*}*/
-</style>
-
+<!-- 4Site Template JS: Render Critical: Tracking JS -->
+<!--<script src="https://cdn.jsdelivr.net/gh/4site-interactive-studios/Ocean-Conservancy-Engaging-Networks-Template@master/themes/child-theme/js/oc-en-tracking.js"></script>-->
+<script>
+    window.addEventListener("load",function(){var e=window.receipt_amount_data,a=pageJson.pageName.toLowerCase();if(a.indexOf("honor")>=0)var n="Honor";else n=a.indexOf("memorial")>=0?"Memorial":a.indexOf("premium")>=0?"Premium":a.indexOf("monthly")>=0?"Monthly":"Standard Donation";var i,o=window.receipt_recurring_frequency;i=o||"OneTime";var r=e.replace(/\$/g,"");parseFloat(r)>0&&"{receipt_data~amount}"!=r&&dataLayer.push({event:"BFREDtransaction",ecommerce:{purchase:{actionField:{id:window.receipt_tx_id,affiliation:"Engaging Networks Donation Form",revenue:r,tax:"0.00",shipping:"0.00"},products:[{name:pageJson.pageName+" - "+pageJson.campaignPageId,brand:n,id:pageJson.campaignPageId+" - "+r+" - "+i,price:r,variant:i,quantity:1}]}}})});
+</script>
 
 <!-- Upland / Mobilecommons Script -->
 <script>
@@ -421,6 +225,37 @@ return new Promise(function(resolve, reject){
 }
 </script>
 
-</body>
+<!-- PYM Child Page Scripts -->
+<script>
 
+    var pymChild = new pym.Child();
+
+    document.addEventListener("DOMContentLoaded", function() {
+        pymChild.sendMessage('childLoaded', 'loading');
+        console.log('Child: "DOMContentLoaded" loaded message has been sent to parent');
+    });
+
+    window.addEventListener("load", function() {
+        setTimeout(function() {
+                pymChild.sendHeight();
+        }, 25);
+        console.log('Child: "load" message has been sent to parent');
+    });
+
+    // Utilizing PYM responsive iFrame library, resizes parent iFrame any time a child iframe is clicked. Overkill but a universal fix that solves for most use cases.
+    if (typeof pymChild !== "undefined") {
+        document.onclick = function() {
+    
+            // Send height update immedietely.
+            pymChild.sendHeight();
+    
+            // And then wait a moment before triggering again so any visual page redraws are corrected for.
+            setTimeout(function() {
+                pymChild.sendHeight();
+            }, 25);
+        };
+    };
+</script>
+
+</body>
 </html>        
