@@ -21,7 +21,8 @@
   var productVariant; 
   if (donationFrequency) {productVariant = donationFrequency;} else {productVariant = "OneTime";}
 
-  var prettyAmount = initialAmount.replace(/\$/g, '');
+  if (initialAmount){var prettyAmount = initialAmount.replace(/\$/g, '');}
+  
   if(parseFloat(prettyAmount) > 0 && prettyAmount != '{receipt_data~amount}') {
     // Send transaction data with a pageview if available
     // when the page loads. Otherwise, use an event when the transaction
