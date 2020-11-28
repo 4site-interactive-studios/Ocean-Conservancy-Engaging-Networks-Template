@@ -152,11 +152,9 @@
       });
     }
 
-    window.addEventListener("load", function() {
-      processDonationValues(
-        pre_selected_value_single,
-        pre_selected_value_monthly
-      );
-    });
+    processDonationValues(
+      pre_selected_value_single,
+      pre_selected_value_monthly
+    );
   });
 })();
